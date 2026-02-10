@@ -150,4 +150,5 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Support
 
-For issues and questions, please open an issue on [GitHub](https://github.com/yourusername/azure-email-service/issues).
+For issues and questions, please open an issue on [GitHub](https://github.com/cedriccastro99/azure-email-service/issues).
+
