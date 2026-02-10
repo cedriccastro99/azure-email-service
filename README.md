@@ -5,7 +5,7 @@ A simple and lightweight TypeScript/JavaScript wrapper for sending emails via Mi
 ## Installation
 
 ```bash
-npm install @ccastro/azure-email-service
+npm install @cedric-castro/azure-email-service
 ```
 
 ## Prerequisites
@@ -20,7 +20,7 @@ You need to have:
 ### TypeScript
 
 ```typescript
-import { AzureEmailService } from '@ccastro/azure-email-service';
+import { AzureEmailService } from '@cedric-castro/azure-email-service';
 
 const emailService = new AzureEmailService({
   clientId: 'your-client-id',
@@ -46,7 +46,7 @@ await emailService.sendEmail({
 ### JavaScript
 
 ```javascript
-const { AzureEmailService } = require('@ccastro/azure-email-service');
+const { AzureEmailService } = require('@cedric-castro/azure-email-service');
 
 const emailService = new AzureEmailService({
   clientId: 'your-client-id',
