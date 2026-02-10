@@ -73,10 +73,12 @@ new AzureEmailService(config: AzureEmailServiceConfig)
 ```
 
 **Config options:**
-- `clientId` (string, required): Azure AD application client ID
-- `clientSecret` (string, required): Azure AD application client secret
-- `tenantId` (string, required): Azure AD tenant ID
-- `maxRetries` (number, optional): Maximum retry attempts, default is 2
+| Parameter | Type | Required | Description |
+| :--- | :--- | :---: | :--- |
+| **`clientId`** | `string` | ✅ Yes | Azure AD application client ID |
+| **`clientSecret`** | `string` | ✅ Yes | Azure AD application client secret |
+| **`tenantId`** | `string` | ✅ Yes | Azure AD tenant ID |
+| **`maxRetries`** | `number` | ❌ No | Maximum retry attempts (Default: **2**) |
 
 ### sendEmail
 
@@ -85,15 +87,17 @@ sendEmail(params: TAzureSendMail): Promise<boolean>
 ```
 
 **Parameters:**
-- `fromEmail` (string, required): Sender email address
-- `toEmail` (string[], required): Array of recipient email addresses
-- `body` (string, required): Email body in HTML format
-- `subject` (string, optional): Email subject
-- `senderName` (string, optional): Display name for sender
-- `cc` (string[], optional): CC recipients
-- `bcc` (string[], optional): BCC recipients
-- `replyTo` (string, optional): Reply-to address
-- `attachments` (AzureEmailAttachment[], optional): Email attachments
+| Parameter | Type | Required | Description |
+| :--- | :--- | :---: | :--- |
+| **`fromEmail`** | `string` | ✅ Yes | Sender email address |
+| **`toEmail`** | `string[]` | ✅ Yes | Array of recipient email addresses |
+| **`body`** | `string` | ✅ Yes | Email body in HTML format |
+| **`subject`** | `string` | ❌ No | Email subject |
+| **`senderName`** | `string` | ❌ No | Display name for sender |
+| **`cc`** | `string[]` | ❌ No | CC recipients |
+| **`bcc`** | `string[]` | ❌ No | BCC recipients |
+| **`replyTo`** | `string` | ❌ No | Reply-to address |
+| **`attachments`** | `AzureEmailAttachment[]` | ❌ No | Email attachments |
 
 **Returns:** `Promise<boolean>` - Returns `true` if email sent successfully
 
@@ -125,14 +129,16 @@ try {
 
 ## Features
 
-- ✅ TypeScript support with full type definitions
-- ✅ Automatic retry mechanism with exponential backoff
-- ✅ HTML email support
-- ✅ CC and BCC support
-- ✅ Attachments support
-- ✅ Custom sender name
-- ✅ Reply-to support
-- ✅ Promise-based API
+| Feature | Description | Status |
+| :--- | :--- | :---: |
+| **TypeScript Support** | Includes full type definitions for robust development. | ✅ |
+| **Automatic Retry** | Built-in mechanism with **exponential backoff** for reliability. | ✅ |
+| **HTML Support** | Capability to send rich-text emails using HTML bodies. | ✅ |
+| **CC & BCC** | Support for Carbon Copy and Blind Carbon Copy recipients. | ✅ |
+| **Attachments** | Support for sending files via `AzureEmailAttachment`. | ✅ |
+| **Custom Sender** | Option to define a specific display name for the "From" field. | ✅ |
+| **Reply-to** | Ability to specify a separate address for user responses. | ✅ |
+| **Promise-based** | Modern `async/await` API for clean asynchronous flow. | ✅ |
 
 ## License
 
