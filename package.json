@@ -1,5 +1,5 @@
 {
-  "name": "azure-email-service",
+  "name": "@ccastro/azure-email-service",
   "version": "1.0.0",
   "description": "Azure email service wrapper for Microsoft Graph API",
   "main": "dist/index.js",
