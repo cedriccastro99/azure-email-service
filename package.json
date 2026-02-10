@@ -33,7 +33,8 @@
   },
   "bugs": {
     "url": "https://github.com/cedriccastro99/azure-email-service/issues"
-  }
+  },
+  "homepage": "https://github.com/cedriccastro99/azure-email-service#readme",
   "peerDependencies": {
     "@azure/msal-node": "^5.0.3",
     "@microsoft/microsoft-graph-client": "^3.0.7"
